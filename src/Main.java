@@ -1,14 +1,12 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         ArrayList<String> partokLista = new ArrayList<>();
-        String partokListatomb = new String();
 
 
         File fbe = new File("files/voksok.txt");
@@ -26,8 +24,8 @@ public class Main {
         String id = in.nextLine();
         int count = 0;
 
-        for (int i = 0; i < partokLista.size(); i++) {
-            if (partokLista.get(i).equals(id)){
+        for (String s : partokLista) {
+            if (s.equals(id)) {
                 count++;
             }
         }
