@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static List<Election> partokLista;
     public static void main(String[] args) throws FileNotFoundException {
 
         ArrayList<String> partokLista = new ArrayList<>();
@@ -32,10 +31,7 @@ public class Main {
                 count++;
             }
         }
+
         System.out.println(id +" "+ count + " szavazatott kapott");
-
-
-
-
     }
 }
